@@ -4,7 +4,7 @@
 body, ul, li {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
+  list-style: none;
 }
 a {
   color: inherit;
@@ -13,6 +13,29 @@ a {
 /* ====================== */
 /*    Menu-Bar Styling    */
 /* ====================== */
+.menu-bar {
+  text-align: center;
+}
 .menu-bar > ul {
   background: #ddd;
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+.menu-bar > ul > li {
+  display: inline-block;
+}
+.menu-bar > ul > li > a {
+  padding: 15px 20px;
+  display: block;
+}
+.menu-bar > ul > li:hover > a {
+  background-color: black;
+  color: white;
+}
+/* =============================== */
+/*    Menu-Bar Dropdown Styling    */
+/* =============================== */
+.menu-bar > ul  ul {
+  display: none;
 }
