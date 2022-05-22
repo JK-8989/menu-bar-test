@@ -16,6 +16,9 @@ a {
 .menu-bar {
   text-align: center;
 }
+.menu-bar ul {
+  background: #ddd;
+}
 .menu-bar > ul {
   background: #ddd;
   display: inline-block;
@@ -25,17 +28,22 @@ a {
 .menu-bar > ul > li {
   display: inline-block;
 }
-.menu-bar > ul > li > a {
+.menu-bar ul > li > a {
   padding: 15px 20px;
   display: block;
 }
-.menu-bar > ul > li:hover > a {
+.menu-bar ul > li:hover > a {
   background-color: black;
   color: white;
 }
-/* =============================== */
-/*    Menu-Bar Dropdown Styling    */
-/* =============================== */
+/* ========================== */
+/*   Dropdown Menu Styling    */
+/* ========================== */
 .menu-bar > ul  ul {
   display: none;
+  position: absolute;
+  width: 177px;
+}
+.menu-bar > ul > li:hover > ul {
+  display: block;
 }
